@@ -23,7 +23,7 @@
 #define LORA_PORT_CHAR             'D'
 #define LORA_DIO0_PINNR            2
 #define LORA_INT                   1
-#define LORA_INT_LEVEL             'L'
+#define LORA_INT_LEVEL             'M'
 
 
 #define LORA_SS_PIN                PIN4_bm
