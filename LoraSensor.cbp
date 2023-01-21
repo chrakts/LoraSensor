@@ -147,6 +147,8 @@
 		<Unit filename="LoraSensorCommands.h" />
 		<Unit filename="Operators.cpp" />
 		<Unit filename="Operators.h" />
+		<Unit filename="adcMessung.cpp" />
+		<Unit filename="adcMessung.h" />
 		<Unit filename="loraHardware.h" />
 		<Unit filename="myConstants.h" />
 		<Unit filename="spiHardware.h" />

@@ -31,7 +31,7 @@
 #include "Cmulti2Buffer_v02.h"
 #include "loraCmulti.h"
 #include "secrets.h"
-
+#include "adcMessung.h"
 
 void setup();
 void setRTC(uint16_t);

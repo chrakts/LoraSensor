@@ -179,10 +179,18 @@ void doClima()
       loraCmulti.broadcastDouble(fDewPoint,'C','1','d');
       status++;
     break;
+    case 4:
+      loraCmulti.broadcastDouble(doTemperatureMessung(),'S','1','t');
+      status++;
+    break;
+    case 5:
+      loraCmulti.broadcastDouble(doSpannungsMessung(),'S','1','U');
+      status++;
+    break;
     default:
       status = 0;
   }
-  if( status > 3 )
+  if( status > 5 )
     status = 0;
   sendViaRelay(loraCmulti.get());
 
