@@ -11,6 +11,6 @@ COMMAND cnetCommands[NUM_COMMANDS] =
 
 INFORMATION cnetInformation[NUM_INFORMATION]=
 {
-  {"tx",'C','1','T',FLOAT,1,(void*)&fExternalTemperature,NULL}
+  {"tx",'C','1','T',FLOAT,1,(void*)&fTemperatur,NULL}
 };
 
