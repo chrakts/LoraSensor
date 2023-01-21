@@ -15,7 +15,10 @@
 #include <string.h>
 
 #include "myConstants.h"
-
+#ifdef SHTC3
+#include "shtc3.h"
+#include "twi_master_driver.h"
+#endif // SHTC3
 #include "Serial.h"
 #include "External.h"
 #include "../Secrets/secrets.h"
@@ -31,6 +34,9 @@
 
 
 void setup();
-
+void setRTC(uint16_t);
+#ifdef SHTC3
+void doClima();
+#endif // SHTC3
 
 #endif // LORASENSOR_H_INCLUDED
