@@ -34,3 +34,9 @@
 bin/Release/
 
 -ffunction-sections
+
+*.sig
+
+*.depend
+
+*.layout
