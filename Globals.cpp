@@ -6,7 +6,9 @@
 
 const char *Node = "LS";
 
-volatile float fExternalTemperature = 5.0;
+volatile bool debugOn = false, oldDebugOn = true;
+
+volatile double  fTemperatur=-999,fHumidity=-999,fDewPoint=-999,fAbsHumitdity=-999;
 
 ComReceiver cmultiRec(&cmulti,Node,cnetCommands,NUM_COMMANDS,cnetInformation,NUM_INFORMATION,"W1",sendViaRelay);
 
@@ -16,3 +18,9 @@ SPI mySPI(0);
 LoRaClass LoRa(&mySPI);
 
 Communication cmulti(0,Node,5,true);
+
+#ifdef SHTC3
+TWI_MasterDriver_t twiE_Master;
+TWI_MasterDriver_t twiC_Master;
+shtc3 humiSensor;
+#endif

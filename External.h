@@ -13,7 +13,9 @@
 
 extern const char *Node;
 
-extern volatile float fExternalTemperature;
+extern volatile bool debugOn, oldDebugOn;
+
+extern volatile double  fTemperatur,fHumidity,fDewPoint,fAbsHumitdity;
 
 extern CRC_Calc crcGlobal;
 
@@ -36,7 +38,11 @@ extern uint8_t key[];
 extern char LoraCmultiBuffer[];
 extern Cmulti2Buffer_v02 loraCmulti;
 
-
+#ifdef SHTC3
+extern TWI_MasterDriver_t twiC_Master;
+extern TWI_MasterDriver_t twiE_Master;
+extern shtc3 humiSensor;
+#endif
 
 #endif // EXTERNAL_H_INCLUDED
 
