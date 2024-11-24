@@ -20,6 +20,7 @@
 					<Add option="-mmcu=atxmega32a4u" />
 					<Add option="-DNDEBUG" />
 					<Add option="-DRECEIVER_BUILT" />
+					<Add option="-DSHTC3" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
